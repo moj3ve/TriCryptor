@@ -1,0 +1,9 @@
+Package: com.tr1fecta.tricrypt
+Name: TriCrypt
+Depends: 
+Version: 1.0
+Architecture: iphoneos-arm
+Description: A tweak for Discord to encrypt your messages in AES256 using RNCryptor!
+Maintainer: Tr1Fecta
+Author: Tr1Fecta
+Section: Tweaks

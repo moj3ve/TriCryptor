@@ -1,0 +1,25 @@
+package_name: TriCrypt
+install_command: killall Discord
+
+TriCrypt:
+    type: tweak
+    # A list of logos files. See variables section for more info. 
+    logos_files:
+        - $wildcard("./", "*.xm")
+    files:
+        - $eval("ls Classes/*/*.m")
+    # A list, excluding logos files, of files to compile. See variables section for more info. 
+    # Min ios
+    targetios: 11.0
+    # List of archs we want to build for
+    archs:
+        - arm64
+        - arm64e
+    sysroot: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/
+    frameworks:
+        - Security
+        - AudioToolbox
+        - AVFoundation
+    
+
+
